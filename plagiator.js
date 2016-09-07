@@ -5,5 +5,5 @@ function plagiat() {
   var min = 1, max = tablica.length;
   var random = Math.floor(Math.random() * (max - min +1)) + min;
   console.log(random)
-
+  console.log(tablica[random])
 }
