@@ -1,5 +1,26 @@
 <html>
 <head>
+<style>
+a {
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+</style>
 <script src="plagiator.js"></script>
 <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 <title>Plagiator - omijaj programy antyplagiatowe!</title>
@@ -7,6 +28,8 @@
 <body>
 <textarea id="plagiat" rows=20 cols=150 placeholder="Wklej tutaj"></textarea>
 <br />
-<button onclick="plagiat()">Plagiatuj</button>
+<button onclick="makeOutput()">Plagiatuj</button>
+<div id="output"></div>
+<div id="choose"></div>
 </body>
 </html>
